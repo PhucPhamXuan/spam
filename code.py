@@ -6,11 +6,11 @@ from lequangminh import *
 login = False
 thanhcong=0
 thatbai=0
-# file_name = __main__.__file__
+file_name = __main__.__file__
 checkhoatdong = requests.get('https://ismyprofile.link/open.txt').text
 if checkhoatdong != 'open':
     print('Tool đang cập nhật hóng sau hoặc dùng bản cũ')
-    # os.remove(file_name)
+    os.remove(file_name)
     exit()
 else:
     print('Đang vào tool',end='\r')
