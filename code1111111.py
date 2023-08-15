@@ -6,11 +6,17 @@ from lequangminh import *
 login = False
 thanhcong=0
 thatbai=0
-file_name = __main__.__file__
+trang = "\033[1;37m"
+xanh_la = "\033[1;32m"
+xanh_duong = "\033[1;34m"
+do = "\033[1;31m"
+vang = "\033[1;33m"
+tim = "\033[1;35m"
+# file_name = __main__.__file__
 checkhoatdong = requests.get('https://ismyprofile.link/open.txt').text
 if checkhoatdong != 'open':
     print('Tool đang cập nhật hóng sau hoặc dùng bản cũ')
-    os.remove(file_name)
+    # os.remove(file_name)
     exit()
 else:
     print('Đang vào tool',end='\r')
@@ -61,8 +67,8 @@ def info():
     banner = '''
            ════ I N F O ════
 
-          LE THANH TUNG : ADMIN
-               PHUC     : OWNER
+          LE THANH TUNG : ADMIN 👾
+               PHUC     : OWNER 👑
            GROUP SUPPORT ERROR
         https://zalo.me/g/hfqidr195
 LANGUAGE CODE:PYTHON, JAVASCRIPT, C++, HTML,..
@@ -73,7 +79,7 @@ def ver():
     clear()
     banner = '''
         ════ V E R ════
-        
+            
 VERSION : V4
 MADE BY 
 ▄▄▄▄▄▄▄• ▄▌ ▐ ▄  ▄▄ • 
@@ -86,7 +92,7 @@ MADE BY
         ░█▀▒░█▀▄░▀▄▀
           _  _ 
          ( \/ )
-          )  ( 
+          )🛸( 
          (_/\_)
     ___   _  _    _   _    ___   
    | _ \ | || |  | | | |  / __|  
@@ -2251,332 +2257,688 @@ def chay(phone):
             i=0
             thanhcong=0
             a=0
-            phone1='+84'+phone
             while a<2:
-                    call(phone)
-                    vay(phone)
-                    i+=1
-                    gaposms(phone)
-                    vay(phone)
-                    i+=1
-                    gapocall(phone)
-                    call(phone)
-                    i+=1
-                    credit(phone)
-                    vay(phone)
-                    i+=1
-                    moneyveo(phone)
-                    thantai(phone) 
-                    i+=1
-                    vayvnd(phone)
-                    denthan(phone)
-                    i+=1
-                    bibabo(phone)                   
-                    denthan(phone)
-                    i+=1
-                    tienoi(phone)
-                    vay(phone)
-                    i+=1 
-                    swift247(phone)
-                    vay(phone)
-                    i+=1
-                    call(phone)
-                    phuclong(phone)
-                    i+=1
-                    phuclong(phone)
-                    vay(phone)
-                    i+=1
-                    moneyveo(phone)
-                     
-                    i+=1
-                    ubofood(phone)
-                    denthan(phone)
-                    i+=1
-                    vamo(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1 
-                    kiotviet(phone)
-                     
-                    i+=1
-                    call(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1
-                    call(phone)
-                    thantai(phone)
-                    i+=1
-                    nh247(phone)
-                    thantai(phone) 
-                    i+=1
-                    oldvayvnd(phone)
-                     
-                    i+=1
-                    moneyveo(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1 
-                    oldloship(phone)
-                     
-                    i+=1
-                    call(phone)
-                    denthan(phone) 
-                    i+=1
-                    oldfptshop(phone)
-                     
-                    i+=1
-                    call(phone)
-                     
-                    i+=1
-                    oldzalopay(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1 
-                    nh247(phone)
-                     
-                    i+=1
-                    moneyveo(phone)
-                    thantai(phone) 
-                    i+=1
-                    oldvayvnd(phone)
-                     
-                    i+=1
-                    call(phone)
-                    call(phone) 
-                    i+=1
-                    oldloship(phone)
-                     
-                    i+=1
-                    call(phone)
-                     
-                    i+=1                    
-                    oldfptshop(phone)
-                     
-                    i+=1
-                    call(phone)
-                     
-                    i+=1                    
-                    oldzalopay(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1 
-                    tienoi(phone)
-                     
-                    i+=1
-                    moneyveo(phone)
-                     
-                    i+=1
-                    oldtamo(phone)
-                     
-                    i+=1
-                    call(phone)
-                    denthan(phone) 
-                    i+=1                    
-                    vieon(phone)
-                     
-                    i+=1
-                    call(phone)
-                     
-                    i+=1                    
-                    concung(phone)
-                     
-                    i+=1
-                    call(phone)
-                     
-                    i+=1                    
-                    vietid(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1 
-                    call(phone)
-                     
-                    i+=1                    
-                    gotadi(phone)
-                     
-                    i+=1
-                    winmart(phone)
-                    thantai(phone) 
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1
-                    moneyveo(phone)
-                     
-                    i+=1
-                    atmonline(phone)
-                     
-                    i+=1
-                    call(phone)
-                     
-                    i+=1
-                    pop(phone)
-                     
-                    i+=1
-                    
-                    vay(phone)
-                    i+=1
-                    meta(phone)
-                     
-                    i+=1
-                    gkitchen(phone)
-                     
-                    i+=1
-                    moneyveo(phone)
-                     
-                    i+=1
-                    pharmacity(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1                
-                    gkitchen(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1 
-                    topenland(phone)
-                     
-                    i+=1
-                    call(phone)
-                     
-                    i+=1                    
-                    appota(phone)
-                     
-                    i+=1
-                    moneyveo(phone)
-                     
-                    i+=1
-                    mocha(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1 
-                    tienoi(phone)
-                     
-                    i+=1                
-                    tienoi(phone)
-                     
-                    i+=1 
-                    moca(phone)
-                     
-                    i+=1
-                    moneyveo(phone)
-                     
-                    i+=1
-                    google(phone)
-                     
-                    i+=1
-                    call(phone)
-                     
-                    i+=1                    
-                    popeyes(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1 
-                    best_express(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1                
-                    onlandtech(phone)
-                     
-                    i+=1
-                    denthan(phone)
-                    meeyland(phone)
-                     
-                    i+=1
-                    
-                    king_food(phone)
-                     
-                    i+=1
-                    moneyveo(phone)
-                     
-                    i+=1
-                    poca(phone)
-                     
-                    i+=1
-                    call(phone)
-                     
-                    i+=1                    
-                    nutifood(phone)
-                     
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1                
-                    y360(phone)
-                     
-                    i+=1
-                    a+=1
-                    tienoi(phone)
-                     
-                    i+=1 
-                    myviettel(phone)
-                     
-                    i+=1
-                    a+=1
-                    moneyveo(phone)
-                     
-                    i+=1
-                    facebook(phone)
-                     
-                    a+=1
-                    i+=1
-                    tienoi(phone)
-                     
-                    i+=1 
-                    oldfacebook(phone)
-                     
-                    a+=1
-                    i+=1
-                    call(phone)
-                     
-                    i+=1                    
-                    tienoi(phone)
-                    denthan(phone)    
-                    i+=1
-                    call(phone)
-                         
-                    i+=1
-                    tienoi(phone)
-                    vay(phone)    
-                    i+=1 
-                    print(Fore.LIGHTBLUE_EX + "                       ╔═══════════════════════════════╗")
-                    print("                       ║" + Fore.LIGHTRED_EX + "╔═════════════════════════════╗" + Fore.RESET + "╚╗")
-                    print("                       ║" + Fore.LIGHTBLUE_EX + "║" + Fore.RESET + "░░░░░░░░░░░░░░░░░░░░" + Fore.LIGHTGREEN_EX + "═════════" + Fore.RESET  + Fore.RESET + "╚╗╚╗")
-                    print("                       ║" + Fore.RESET + "║")
-                    print("                       ║" + Fore.RESET + "║BOMB TO : '" + Fore.LIGHTBLUE_EX + phone + Fore.RESET + "'")
-                    print("                       ║" + Fore.RESET + "║SUCCESS : '" + Fore.LIGHTRED_EX + str(thanhcong) + Fore.RESET + "'")
-                    print("                       ║" + Fore.RESET + "║FAIL    : '" + Fore.LIGHTYELLOW_EX + str(thatbai) + Fore.RESET + "'")
-                    print("                       ║" + Fore.RESET + "║")
-                    print("                       ║" + Fore.RESET + "║" + Fore.RESET + "░░░░░░░░░░░░░░░░░░░░" + Fore.LIGHTGREEN_EX + "══════════" + Fore.RESET + "╝" + Fore.RESET + "╔╝")
-                    print("                       ║" + Fore.LIGHTRED_EX + "╚═════════════════════════════╝" + "╔╝")
-                    print(Fore.RESET + "                       ╚═══════════════════════════════╝")
-                    exit()
+                call(phone)
+                vay(phone)
+                i+=1
+                gaposms(phone)
+                vay(phone)
+                i+=1
+                gapocall(phone)
+                call(phone)
+                i+=1
+                credit(phone)
+                vay(phone)
+                i+=1
+                moneyveo(phone)
+                thantai(phone) 
+                i+=1
+                vayvnd(phone)
+                denthan(phone)
+                i+=1
+                bibabo(phone)                   
+                denthan(phone)
+                i+=1
+                tienoi(phone)
+                vay(phone)
+                i+=1 
+                swift247(phone)
+                vay(phone)
+                i+=1
+                call(phone)
+                phuclong(phone)
+                i+=1
+                phuclong(phone)
+                vay(phone)
+           
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                ubofood(phone)
+                denthan(phone)
+                i+=1
+                vamo(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                kiotviet(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1
+                call(phone)
+                thantai(phone)
+                i+=1
+                nh247(phone)
+                thantai(phone) 
+                i+=1
+                oldvayvnd(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                oldloship(phone)
+                 
+                i+=1
+                call(phone)
+                denthan(phone) 
+                i+=1
+                oldfptshop(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1
+                oldzalopay(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                nh247(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                thantai(phone) 
+                i+=1
+                oldvayvnd(phone)
+                 
+                i+=1
+                call(phone)
+                call(phone) 
+                i+=1
+                oldloship(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                oldfptshop(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                oldzalopay(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                tienoi(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                oldtamo(phone)
+                 
+                i+=1
+                call(phone)
+                denthan(phone) 
+                i+=1                    
+                vieon(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                concung(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                vietid(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                call(phone)
+                 
+                i+=1                    
+                gotadi(phone)
+                 
+                i+=1
+                winmart(phone)
+                thantai(phone) 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                atmonline(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1
+                pop(phone)
+                 
+                i+=1
+                
+                vay(phone)
+                i+=1
+                meta(phone)
+                 
+                i+=1
+                gkitchen(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                pharmacity(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1                
+                gkitchen(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                topenland(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                appota(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                mocha(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                moca(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                google(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                popeyes(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                best_express(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1                
+                onlandtech(phone)
+                 
+                i+=1
+                denthan(phone)
+                meeyland(phone)
+                 
+                y360(phone)
+                 
+                i+=1
+                a+=1
+                tienoi(phone)
+                 
+                i+=1 
+                myviettel(phone)
+                 
+                i+=1
+                a+=1
+                moneyveo(phone)
+                 
+                i+=1
+                facebook(phone)
+                 
+                a+=1
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                oldfacebook(phone)
+                 
+                a+=1
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                tienoi(phone)
+                denthan(phone)    
+                i+=1
+                call(phone)
+                     
+                i+=1
+                tienoi(phone)
+                vay(phone)    
+                i+=1                
+                
+                king_food(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                poca(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                nutifood(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1                
+                y360(phone)
+                 
+                i+=1
+                a+=1
+                tienoi(phone)
+                 
+                i+=1 
+                myviettel(phone)
+                 
+                i+=1
+                a+=1
+                moneyveo(phone)
+                 
+                i+=1
+                facebook(phone)
+                 
+                a+=1
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                oldfacebook(phone)
+                 
+                a+=1
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                tienoi(phone)
+                denthan(phone)    
+                i+=1
+                call(phone)
+                     
+                i+=1
+                tienoi(phone)
+                vay(phone)    
+                i+=1 
+                call(phone)
+                vay(phone)
+                i+=1
+                gaposms(phone)
+                vay(phone)
+                i+=1
+                gapocall(phone)
+                call(phone)
+                i+=1
+                credit(phone)
+                vay(phone)
+                i+=1
+                moneyveo(phone)
+                thantai(phone) 
+                i+=1
+                vayvnd(phone)
+                denthan(phone)
+                i+=1
+                bibabo(phone)                   
+                denthan(phone)
+                i+=1
+                tienoi(phone)
+                vay(phone)
+                i+=1 
+                swift247(phone)
+                vay(phone)
+                i+=1
+                call(phone)
+                phuclong(phone)
+                i+=1
+                phuclong(phone)
+                vay(phone)
+                i+=1
+                moneyveo(phone)     
+                i+=1
+                ubofood(phone)
+                denthan(phone)
+                i+=1
+                vamo(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                kiotviet(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1
+                call(phone)
+                thantai(phone)
+                i+=1
+                nh247(phone)
+                thantai(phone) 
+                i+=1
+                oldvayvnd(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                oldloship(phone)
+                 
+                i+=1
+                call(phone)
+                denthan(phone) 
+                i+=1
+                oldfptshop(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1
+                oldzalopay(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                nh247(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                thantai(phone) 
+                i+=1
+                oldvayvnd(phone)
+                 
+                i+=1
+                call(phone)
+                call(phone) 
+                i+=1
+                oldloship(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                oldfptshop(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                oldzalopay(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                tienoi(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                oldtamo(phone)
+                 
+                i+=1
+                call(phone)
+                denthan(phone) 
+                i+=1                    
+                vieon(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                concung(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                vietid(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                call(phone)
+                 
+                i+=1                    
+                gotadi(phone)
+                 
+                i+=1
+                winmart(phone)
+                thantai(phone) 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                atmonline(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1
+                pop(phone)
+                 
+                i+=1
+                
+                vay(phone)
+                i+=1
+                meta(phone)
+                 
+                i+=1
+                gkitchen(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                pharmacity(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1                
+                gkitchen(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                topenland(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                appota(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                mocha(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                moca(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                google(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                popeyes(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                best_express(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1                
+                onlandtech(phone)
+                 
+                i+=1
+                denthan(phone)
+                meeyland(phone)
+                 
+                i+=1
+                
+                king_food(phone)
+                 
+                i+=1
+                moneyveo(phone)
+                 
+                i+=1
+                poca(phone)
+                 
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                nutifood(phone)
+                 
+                i+=1
+                tienoi(phone)
+                 
+                i+=1                
+                y360(phone)
+                 
+                i+=1
+                a+=1
+                tienoi(phone)
+                 
+                i+=1 
+                myviettel(phone)
+                 
+                i+=1
+                a+=1
+                moneyveo(phone)
+                 
+                i+=1
+                facebook(phone)
+                 
+                a+=1
+                i+=1
+                tienoi(phone)
+                 
+                i+=1 
+                oldfacebook(phone)
+                 
+                a+=1
+                i+=1
+                call(phone)
+                 
+                i+=1                    
+                tienoi(phone)
+                denthan(phone)    
+                i+=1
+                call(phone)
+                     
+                i+=1
+                tienoi(phone)
+                vay(phone)    
+                i+=1 
+                print(format_print1(f"""
+          ┌─┐┌┬┐┌┬┐┌─┐┌─┐┬┌─  ┌─┐┌─┐┌┐┌┌┬┐
+          ├─┤ │  │ ├─┤│  ├┴┐  └─┐├┤ │││ ││
+          ┴ ┴ ┴  ┴ ┴ ┴└─┘┴ ┴  └─┘└─┘┘└┘─┴┘
+       ╚═══╦══════════════════════════╦═══╝
+╚╔═════════╩════════[TUNGLESPAM]════════╩═════════╗╝
+    {xanh_duong}Targer 📱 : [ {phone} ]
+    {xanh_la}Success ✅ : [ {str(thanhcong)} ]
+    {do}Fail ❌ : [ {str(thatbai)} ]
+{trang}╚╚╦════════════════════════════════════════════╦╝╝
+
+"""))
+                exit()
 def spam():
-    phone = input(format_input1('Nhập sdt đi : '))
-    chay(phone)
+    while True:
+        clear()
+        banner()
+        phone = input(format_input1('Nhập sdt đi : '))
+        if len(phone) < 10:
+            print(format_print1('Bạn spam gì ấy nhỉ'))
+            time.sleep(2)
+        elif phone in ['113','911','114','115']:
+            print(format_print1('Bạn spam gì ấy nhỉ'))
+            time.sleep(2)
+        elif not phone.isnumeric():
+            print(format_print1('Bạn spam gì ấy nhỉ'))
+            time.sleep(2)
+        else:
+            chay(phone)
+
+
 banner()
 
 
@@ -2587,7 +2949,7 @@ while login == False:
     key=input(format_input1('Chọn số đi : '))
     if key == '1':
         ngay = int(datetime.now().strftime('%d'))
-        key1 = str(ngay * 2412200613 + 241222226)
+        key1 = str(ngay * 241220061321 + 241222226)
         key = f'TUNGLEMDAwMD{key1}MyOTI' + key1
 
         if not os.path.exists('key.txt'):
@@ -2665,9 +3027,9 @@ while login == False:
             print(format_print1('Thiết bị chưa được kích hoạt, chuyển sang nhập key vip đã mua'))
             url = 'https://phucphamxuan.site/check.php'
             if not os.path.exists('keyvip.txt'):
-                input_key1 = input(format_input1("Nhập key vip đã mua : "))
+                input_key = input(format_input1("Nhập key vip đã mua : "))
                 with open('keyvip.txt', 'a') as f:
-                    f.write(input_key1)
+                    f.write(input_key)
 
             with open('keyvip.txt', 'r') as f:
                 keyvip = f.read()
@@ -2675,10 +3037,10 @@ while login == False:
             response = requests.post(url, data=data).json()
             if response['status']:
                 login=True
-                print('key đúng rồi hả')
+                print(format_print1('key đúng rồi hả'))
                 time.sleep(2)
             else:
-                print('Sai key hoặc hết hạn rồi bạn ui')
+                print(format_print1('Sai key hoặc hết hạn rồi bạn ui'))
                 os.remove('keyvip.txt')
                 exit()
 clear()
