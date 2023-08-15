@@ -2587,14 +2587,13 @@ while login == False:
     key=input(format_input1('Chọn số đi : '))
     if key == '1':
         ngay = int(datetime.now().strftime('%d'))
-        key1 = str(ngay * 241220061321 + 241222226)
+        key1 = str(ngay * 2412200613 + 241222226)
         key = f'TUNGLEMDAwMD{key1}MyOTI' + key1
 
         if not os.path.exists('key.txt'):
             formatted_url = f'https://phucphamxuan.site/key.html?key={key}'
             token_link1s = '6cb4deef9316f81e8d94b8c23bd6aebcb6b33da029500695973b156694ad169c'
             link1s = requests.get(f'https://dilink.net/api.php?token={token_link1s}&url={formatted_url}&direct=NO').json()['url']
-            print(formatted_url)
             print(format_print1(f"""Url Get Key: {link1s} \n"""))
             password = input(format_input1('[●] ➩ Input Key: '))
             with open('key.txt', 'w') as f:
@@ -2666,9 +2665,9 @@ while login == False:
             print(format_print1('Thiết bị chưa được kích hoạt, chuyển sang nhập key vip đã mua'))
             url = 'https://phucphamxuan.site/check.php'
             if not os.path.exists('keyvip.txt'):
-                input_key = input(format_input1("Nhập key vip đã mua : "))
+                input_key1 = input(format_input1("Nhập key vip đã mua : "))
                 with open('keyvip.txt', 'a') as f:
-                    f.write(input_key)
+                    f.write(input_key1)
 
             with open('keyvip.txt', 'r') as f:
                 keyvip = f.read()
