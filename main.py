@@ -52,4 +52,3 @@ def run():
 while True:
 	run()
 	time.sleep(4)
-	keep_alive()
