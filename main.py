@@ -48,7 +48,8 @@ def run():
 	random_string1 = generate_random_string(random_string)
 	check_balance(random_string1)
 
-keep_alive()
+
 while True:
 	run()
-	time.sleep(3)
+	time.sleep(4)
+	keep_alive()
