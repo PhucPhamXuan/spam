@@ -7,9 +7,11 @@ from keep_alive import keep_alive
 # Replace with your bot token and group chat ID
 bot_token = "7012747019:AAG2VJJGa3akgBZ5OnUagMoadaGZI_rbSgE"
 chat_id = "-4265239922"
+bot_token2 = "6294707012:AAEaLDAQRo_GSiNhi63zPLrWnI5kaNTnc6M"
+chat_id2 = "-4208892116"
 # Create a Telegram bot instance
 bot = telebot.TeleBot(bot_token)
-
+bot2 = telebot.TeleBot(bot_token2)
 
 def generate_random_alphanumeric_string(length=32):
 	characters = string.ascii_lowercase + string.digits
@@ -34,6 +36,8 @@ def check_balance(random_string):
 		bot.send_message(chat_id, message)
 	else:
 		print(f"\033[91mFail! Random string: {random_string}\033[0m")
+		message2 = f"{random_string}"
+		bot2.send_message(chat_id2, message2)
 
 
 
@@ -45,3 +49,4 @@ def run():
 keep_alive()
 while True:
 	run()
+	time.sleep(3)
